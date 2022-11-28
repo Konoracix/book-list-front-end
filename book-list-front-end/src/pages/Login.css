@@ -69,3 +69,10 @@ input{
 	position:relative;
 	top:1px;
 }
+#loginMessage{
+	color: red;
+}
+#togglePassword{
+	margin-left: -30px;
+	cursor: pointer;
+}
