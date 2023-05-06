@@ -7,7 +7,8 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import Login from './pages/Login';
-import BooksList from './pages/Books/BooksList';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Profile from './pages/Profile/Profile';
 
 export default function App(){
 
@@ -21,8 +22,8 @@ export default function App(){
 		<BrowserRouter>
 		<Routes>
 			<Route path='/Login' element={<Login/>}/>
-			<Route path='/BooksList' element={<BooksList/>}/>
-			
+			<Route path='/Dashboard' element={<Dashboard/>}/>
+			<Route path='/Profile' element={<Profile/>}/>
 		</Routes>
 		</BrowserRouter>
 	)
