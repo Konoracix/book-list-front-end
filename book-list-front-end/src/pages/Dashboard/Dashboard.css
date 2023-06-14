@@ -1,0 +1,89 @@
+body{
+	background-color: rgb(94, 94, 94)
+}
+
+@keyframes topSlide {
+	0% {
+		transform: translateY(-100%);
+	}
+  
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+  
+	100% {
+		opacity: 1;
+	}
+}
+.mainContainer {
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-top: 5vw;
+	padding: 0;
+	/* border: white solid; */
+	width: auto;
+}
+.tileContainer {
+	width: 76vw;
+	height: 54vh;
+	margin-left: auto;
+	margin-right: auto;
+	animation: 2s ease-in-out 0s 1 fadeIn;
+}
+.tile {
+	float: left;
+	width: 20vw;
+	height: 25vh;
+	margin-left: 2vw;
+	/* background-color:rgb(87, 87, 87); */
+	background-color: rgb(50, 50, 50);
+	margin-top: 2vh;
+	cursor:pointer;
+	text-align: center;
+	line-height: 24vh;
+	font-size:calc(3vh);
+	color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-shadow: 0px 0px 10px #000;
+}
+
+.tile.first {
+	clear: both !important;
+	width: 32vw;
+	height: 52vh;
+	/* background-color: rgb(156, 156, 156); */
+	background-color: rgb(50, 50, 50);
+	line-height: 50vh;
+	font-size:calc(5vh);
+	margin-left: 0;
+	background-image: url("../../books2.png");
+	background-size: 75%;
+	/* background-position: center 1px; */
+	transition: .5s ease-in-out;
+	transition-property: text-shadow, background-color;
+	
+}
+
+
+
+.tile.first:hover {
+	background-color: rgb(100, 100, 100);
+	text-shadow: 5px 5px 15px #000;
+}
+
+.tile:hover {
+	box-shadow: 0 0 10px rgb(100, 100, 100);;
+	background-color: rgb(87, 87, 87);
+}
+
+.tile.third {
+	background-image: url("../../profile4.png");
+	background-size: 75%;
+}

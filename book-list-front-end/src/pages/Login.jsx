@@ -43,7 +43,7 @@ useEffect(()=>{
 				else{
 					setFetchedData(data.data);
 					sessionStorage.setItem("token", data.data.message.token)
-					navigate('/BooksList');
+					navigate('/Dashboard');
 				}
 			})()
 		}

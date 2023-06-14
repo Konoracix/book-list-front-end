@@ -1,0 +1,35 @@
+.rightColumnBody {
+	width: 35vw;
+	height: calc(100vh - 5.2em);
+	line-height: normal;
+	margin-right: 0;
+	float: left;	
+	animation: 1s ease-in-out 0s 1 fadeIn;
+}
+.rightPanel {
+	height: calc((100vh) - (5.2em));
+	background-color: rgb(78, 78, 78);
+	margin: none;
+	padding-top: 3em;
+}
+
+.rightPanelItem {
+	margin-left: 2em;
+	padding-top: 1em;
+	text-align: left;
+	list-style: none;
+	font-size: 20px;
+	color: white;
+	font-weight: 300;
+	text-align: right;
+}
+
+.UserSection {
+	width: 100%;
+	text-align: center;
+
+}
+
+.UserSection img {
+	width: 40%;
+}
